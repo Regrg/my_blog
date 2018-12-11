@@ -125,7 +125,7 @@ example using mask to check st_mode:
 strcut stat statbuf;
 mode_t modes;
 
-stat("filename, &statbuf);
+stat("filename", &statbuf);
 modes = statbuf.st_mode;
 
 // file is directory and user has executing permission
